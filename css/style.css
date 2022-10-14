@@ -1,0 +1,34 @@
+/* RESET */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.debug {
+    border: 1px solid black;
+    min-height: 50px;
+}
+
+body {
+    background-color: #dedede;
+}
+
+.my-container {
+    width: 500px;
+    min-height: 50px;
+    margin: 0 auto;
+    background-color: #ff0000;
+}
+
+/* TEXT */
+
+/* PADDING & MARGIN */
+
+/* COLOR */
+
+/* GENERAL */
+
+/* HEADER */
+
+/* MAIN */
