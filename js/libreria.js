@@ -56,4 +56,3 @@ function palindrome(str) {
     return reverseStr === lowStr;
 }
 
-
