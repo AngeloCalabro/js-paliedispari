@@ -14,24 +14,33 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- SCRIPT Libreria -->
-    <script src="./js/libreria.js"></script>
+    <script src="../js/libreria.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- TITLE -->
-    <title>js-paliedispari</title>
+    <title>js-paliedispari2</title>
 </head>
 
 <body>
-    <div class="float-end"><a href="./pages/pages2.html">pagina seguente</a></div>
-    <div id="my-container">
-        <input id="input-text" type="text" class="rounded-pill mx-1 text-center">
-        <button id="btn-A">Invia</button>
-        <div id="row-response"></div>
+    <div class="float-end"><a href="../index.html">Home</a></div>
+    <div id="my-cont">
+        <div>
+            <input type="radio" id="pari" name="pari_dispari" value="pari">
+            <label for="pari">Pari</label><br>
+
+            <input type="radio" id="dispari" name="pari_dispari" value="dispari">
+            <label for="dispari">Dispari</label><br>
+
+            <input id="numberInput" type="number" min="1" max="5" value="1">
+            <button id="calc-input">Calcola</button>
+        </div>
+    </div>
+
     </div>
 
     <!-- SCRIPT -->
-    <script src="./js/script.js"></script>
+    <script src="../js/script2.js"></script>
 </body>
 
 </html>

@@ -14,6 +14,12 @@ body {
     background-color: #dedede;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .my-container {
     width: 500px;
     min-height: 50px;
