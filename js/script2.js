@@ -11,12 +11,26 @@ const containerP2 = document.getElementById('my-cont');
 const inputNumber = document.getElementById('numberInput');
 const btnInput = document.getElementById('calc-input');
 
-// Far scegliere all'utente pari o dispari
-const radioButtons = document.querySelectorAll('input[name="pari_dispari"]');
-
 // Creazione evento al click
 btnInput.addEventListener('click', function () {
     console.log(inputNumber.value)
-}
+    if (isNaN(inputNumber.value) || inputNumber.value < 1 || inputNumber.value > 5) {
+        alert('Inserisci numero tra 1 e 5')
+        return;
+    }
+    // Far scegliere all'utente pari o dispari
+    const radioButtonValue = document.querySelector('input[name="pari_dispari"]:checked').value;
+    console.log(radioButtonValue);
 
-// console.log(inputNumber.value)
+    // Numero random generato
+    const randomNum = randomNumber(1, 5);
+    const somma = parseInt(inputNumber.value) + randomNum;
+
+    // Controllo se ha vinto o perso
+    if ((isEven(somma) && radioButtonValue === 'pari') || (radioButtonValue === 'dispari' && !isEven(somma))) {
+        console.log('Hai vinto!')
+    } else {
+        console.log('Hai perso!')
+    }
+    inputNumber.value = '';
+})

@@ -15,7 +15,7 @@ const rowResponse = document.getElementById('row-response')
 // Creazione evento al click
 btnA.addEventListener('click', function () {
     // Prendiamo inputText per leggere cosa è stato scritto
-    let wordInput = inputText.value
+    let wordInput = inputText.value.toLowerCase().trim();
     // Se inseriscono altri caratteri diversi da lettere
     if (!isNaN(wordInput)) alert('Inserisci solo lettere!');
     // Funzione di controllo se la parola è palindroma
@@ -27,4 +27,5 @@ btnA.addEventListener('click', function () {
     } else {
         rowResponse.innerHTML = 'la tua parola NON è palindroma';
     }
+    rowResponse.value = '';
 });
